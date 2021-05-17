@@ -520,14 +520,8 @@ video {
 @media (min-width: 1536px) {
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(239, 68, 68, var(--tw-bg-opacity))
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity))
+.border {
+  border-width: 1px
 }
 
 .table {

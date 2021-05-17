@@ -62,16 +62,24 @@
     .box {
         height: 100px;
     }
+
+    .red {
+        background-color: red;
+    }
+
+    .br {
+        border: 1px solid red;
+    }
 </style>
 
 <div>OMI In Reserve: {numberWithCommas(omiInReserve)}</div>
-<div class="border-red-500 box" style="width: 100%">
-    <div class="box bg-red-500" style="width: {100*omiInReserve/MAX_OMI_IN_RESERVE}%"></div>
+<div class="br box" style="width: 100%">
+    <div class="box red" style="width: {100*omiInReserve/MAX_OMI_IN_RESERVE}%"></div>
 </div>
 
 <div>OMI On Exchanges: {numberWithCommas(omiOnExchanges)}</div>
-<div class="border-red-500 box" style="width: 100%">
-    <div class="box bg-red-500" style="width: {100*omiOnExchanges/MAX_OMI_ON_EXCHANGES}%"></div>
+<div class="br box" style="width: 100%">
+    <div class="box red" style="width: {100*omiOnExchanges/MAX_OMI_ON_EXCHANGES}%"></div>
 </div>
 
 <div>Week: {week} (Years: {Math.floor(week/52)} Weeks: {week % 52})</div>
