@@ -53,12 +53,6 @@
 </script>
 
 <style>
-    $column: 200px;
-
-    .menu {
-        width: calc(4 * $column);
-    }
-
     .box {
         height: 100px;
     }
