@@ -50,6 +50,9 @@
     }
 </script>
 
+<div style="font-size: 36px;">
+    WARNING! THIS IS NOT CURRENTLY REALISTIC. SECONDARY MARKET IS NOT ACCOUNTED FOR.
+</div>
 
 <div>OMI In Reserve: {numberWithCommas(omiInReserve)}</div>
 <div style="width: 100%; height: 80px; border: 1px solid red;">
