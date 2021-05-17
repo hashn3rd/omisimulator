@@ -31,7 +31,7 @@ module.exports = {
 						compilerOptions: {
 							dev: !prod
 						},
-						emitCss: prod,
+						emitCss: true,
 						hotReload: !prod,
 						preprocess: svelteConfig.preprocess,
 

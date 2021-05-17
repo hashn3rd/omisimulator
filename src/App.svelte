@@ -1,6 +1,4 @@
 <script>
-    import './App.css';
-
     const MAX_OMI_IN_RESERVE = 3.5e11;
     const MAX_OMI_ON_EXCHANGES = 3.5e11;
 
@@ -52,28 +50,15 @@
     }
 </script>
 
-<style>
-    .box {
-        height: 100px;
-    }
-
-    .red {
-        background-color: red;
-    }
-
-    .br {
-        border: 1px solid red;
-    }
-</style>
 
 <div>OMI In Reserve: {numberWithCommas(omiInReserve)}</div>
-<div class="br box" style="width: 100%">
-    <div class="box red" style="width: {100*omiInReserve/MAX_OMI_IN_RESERVE}%"></div>
+<div style="width: 100%; height: 80px; border: 1px solid red;">
+    <div class="box red" style="width: {100*omiInReserve/MAX_OMI_IN_RESERVE}%; height: 80px; background-color: red;"></div>
 </div>
 
 <div>OMI On Exchanges: {numberWithCommas(omiOnExchanges)}</div>
-<div class="br box" style="width: 100%">
-    <div class="box red" style="width: {100*omiOnExchanges/MAX_OMI_ON_EXCHANGES}%"></div>
+<div style="width: 100%; height: 80px; border: 1px solid red;">
+    <div style="width: {100*omiOnExchanges/MAX_OMI_ON_EXCHANGES}%; height: 80px; background-color: red;"></div>
 </div>
 
 <div>Week: {week} (Years: {Math.floor(week/52)} Weeks: {week % 52})</div>
