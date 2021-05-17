@@ -2,7 +2,7 @@ module.exports = {
   purge: {
     mode: 'all',
     content: [
-      './public/index.html',
+      './docs/index.html',
       './src/**/*.html',
       './src/**/*.svelte',
       './src/**/*.css',
